@@ -8,7 +8,11 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <input onChange={(e)=> setInputTxt("Hello "+e.target.value)} />
+        <input
+        type="text"
+        onChange={(e) => setInputTxt("Hello " + e.target.value)}
+      />
+      <p>{inputTxt}</p>
     </div>
   )
 }
